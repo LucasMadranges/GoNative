@@ -1,0 +1,49 @@
+{
+  "name": "pulse",
+  "version": "1.0.0",
+  "description": "Social media app in React Native and Go",
+  "homepage": "https://github.com/LucasMadranges/Pulse#readme",
+  "bugs": {
+    "url": "https://github.com/LucasMadranges/Pulse/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LucasMadranges/Pulse.git"
+  },
+  "workspaces": [
+    "mobile"
+  ],
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
+  "license": "ISC",
+  "author": "LucasMadranges",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@typescript-eslint/eslint-plugin": "^8.32.0",
+    "@typescript-eslint/parser": "^8.32.0",
+    "eslint": "^9.24.0",
+    "eslint-config-prettier": "^10.1.2",
+    "eslint-import-resolver-typescript": "^4.3.4",
+    "eslint-plugin-import": "^2.31.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
+    "prettier": "^3.5.3"
+  }
+}
